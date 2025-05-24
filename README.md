@@ -1,2 +1,2 @@
 # LCD_Interfacing
-Interface LED using STM32 and Display data
+Interface LCD using STM32 and Display data
