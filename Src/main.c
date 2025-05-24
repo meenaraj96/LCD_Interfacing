@@ -59,7 +59,7 @@ void GPIO_Inits(void)
 	//PB5,PB6,PB7 - Output(01)
 	GPIOB->MODER |=0X5400; //0101 0100 0000 0000 - (7654 3210)
 
-	//SET EN(PB7) AND RW(PB6) LOW -- (pin 31-16)->RESET, (pin 15-0) -> SET
+	//EN(PB7) AND RW(PB6) LOW -- (pin 31-16)->RESET, (pin 15-0) -> SET
 	GPIOB->BSRR =0x00C00000; // 0000 0000 1100 0000(RESET)
 
 	//PC0 -PC7 - Output(01)
